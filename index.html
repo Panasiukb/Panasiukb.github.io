@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Limit App</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <a href="/first-page.html">Link to first page</a>
+        <a href="/second-page.html">Link to second page</a>
+        <a href="/third-page.html">Link to third page</a>
+    </div>
+
+    <div class="header">
+        <h1>No Limit Info</h1>
+    </div>
+
+    <div class="row">
+        
+        <div class="column sidebar">
+            <h2>Usefull links</h2>
+            <p></p>
+        </div>
+
+        <div class="column middle">
+            <header>
+                <h2>Tasks for shift</h2>
+                <input type="text"
+                placeholder="Type a task to do and press enter"
+                name="task"
+                id="task"
+                >
+            </header>
+            <ul id="tasks-list"></ul>
+            <!-- <ul>
+                <li class="ready">
+                    First task
+                    <div class="buttons">
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+                <li>
+                    Second task
+                    <div class="buttons">
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+                <li>
+                    Third task
+                    <div class="buttons">
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+                
+            </ul> -->
+            <div id="bottom"></div>
+        </div>
+
+        <div class="column sidebar">
+            <h2>Disc app links</h2>
+            <p></p>
+        </div>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="footer">
+        <p>Bartosz Panasiuk &copy; No Limit</p>
+    </div>
+    <script src="/public/js/tasks-list.js"></script>
+    <script type="module" src="/public/js/new-task.js"></script>
+    <script type="module" src="/public/js/update-task.js"></script>
+    <script type="module" src="/public/js/delete-task.js"></script>
+</body>
+</html>

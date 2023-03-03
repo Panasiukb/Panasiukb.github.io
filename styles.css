@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style sidebars */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.column.sidebar {
+    width: 25%;
+    color: rgb(245, 10, 10);
+}
+
+.column.middle {
+   width: 50%; 
+}
+
+/* footer of the website */
+.footer {
+    background-color: gold;
+    padding: 10px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* header of the website */
+.header {
+    background-color: gold;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* style navigation */
+.navigation {
+    background-color: gold;
+    overflow: hidden;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    /* display: inline-block; */
+    float: left;
+}
+
+.navigation a:hover {
+    background-color: #BF610F;
+}
+
+/* header and bottom of task list */
+header {
+    background-color: gold;
+    color: black;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* input to write a task to do */
+input {
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    text-indent: 16px;
+    margin-top: 10px;
+}
+
+/* list of tasks */
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 15px;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 3px;
+    background-color: white;
+}
+
+.ready {
+    text-decoration: line-through;
+}
+
+.ready button.complete {
+    background-color: #43d33e;
+}
+
+#bottom {
+    background-color: gold;
+    height: 50px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* style buttons of list of tasks */
+button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.buttons {
+    float: right;
+}
+
+.buttons button {
+    float: right;
+    border: none;
+}
+
+.remove {
+    background-image: url("/public/img/delete.png");
+    background-size: contain;
+    margin-left: 5px;
+}
+
+.complete {
+    background-image: url("/public/img/complete.png");
+    background-size: contain;
+    border-radius: 15px;
+}
+
+/* for different devices */
+@media screen and (max-width: 600px) {
+
+    .column.sidebar, .column.middle {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+    .footer{
+       position: fixed;
+    }
+}
+
+body {
+    background-image: url('https://tsl-biznes.pl/wp-content/uploads/2017/09/coo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
