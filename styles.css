@@ -122,13 +122,13 @@ button {
 }
 
 .remove {
-    background-image: url("/public/img/delete.png");
+    background-image: url("/public/img/delete.png.png");
     background-size: contain;
     margin-left: 5px;
 }
 
 .complete {
-    background-image: url("/public/img/complete.png");
+    background-image: url("/public/img/complete.png.png");
     background-size: contain;
     border-radius: 15px;
 }
@@ -152,4 +152,16 @@ body {
     background-image: url('https://tsl-biznes.pl/wp-content/uploads/2017/09/coo2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.column.sidebar a{
+    color: black;
+}
+
+.column.sidebar a:hover{
+    background-color: #BF610F;
+}
+
+.column.sidebar li{
+    background-color: gold;
 }
